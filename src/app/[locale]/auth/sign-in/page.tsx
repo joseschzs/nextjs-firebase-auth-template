@@ -1,4 +1,5 @@
 import SignInGoogleButton from "@/app/[locale]/auth/sign-in/SignInGoogleButton";
+import { SignInGoogleRedirect } from "@/app/[locale]/auth/sign-in/SignInGoogleRedirect";
 import { LocaleSelector } from "@/components/authentication/LocaleSelector";
 import { Box, Grid, Typography } from "@mui/material";
 import { getTranslations } from "next-intl/server";
@@ -81,6 +82,7 @@ export default async function SignInPage() {
               </Box>
 
               <SignInGoogleButton />
+              <SignInGoogleRedirect />
             </Box>
           </Box>
 
