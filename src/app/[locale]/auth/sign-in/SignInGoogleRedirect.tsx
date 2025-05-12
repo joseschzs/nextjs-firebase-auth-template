@@ -54,7 +54,7 @@ export function SignInGoogleRedirect() {
 
   React.useEffect(() => {
     handleLoginWithRedirect();
-  }, [handleLoginWithRedirect]);
+  }, []);
 
   return (
     <div>

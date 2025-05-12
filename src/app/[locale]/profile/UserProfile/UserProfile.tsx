@@ -46,7 +46,7 @@ export function UserProfile({ count, incrementCounter }: UserProfileProps) {
         <h3 className={styles.title}>You are logged in as</h3>
         <div className={styles.content}>
           <div className={styles.avatar}>
-            {user.photoURL && <img src={user.photoURL} />}
+            {/*{user.photoURL && <img src={user.photoURL} />}*/}
           </div>
           <span>{user.email}</span>
         </div>
