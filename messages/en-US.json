@@ -1,0 +1,112 @@
+{
+  "Dashboard": {
+    "good_morning": "Good morning",
+    "good_afternoon": "Good afternoon",
+    "good_evening": "Good evening"
+  },
+  "AuthPage": {
+    "thesis_manager": "Thesis Manager",
+    "manage_supervise_thesis_processes_easily": "Manage and supervise thesis processes easily",
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "mail": "Email",
+    "go_back": "Go back",
+    "continue_with_google": "Continue with Google",
+    "logging_in": "Logging in",
+    "retry": "Retry",
+    "auth/popup-closed-by-user": "The popup was closed before completing sign-in.",
+    "auth/cancelled-popup-request": "The sign-in request was canceled.",
+    "auth/network-request-failed": "A network error occurred. Please try again.",
+    "auth/invalid-api-key": "The API key is invalid. Check the configuration.",
+    "auth/invalid-email": "The email is invalid.",
+    "auth/invalid-credential": "Invalid credentials. Check your email or password.",
+    "auth/too-many-requests": "Too many requests. Please try again later.",
+    "auth/configuration-not-found": "configuration-not-found",
+    "auth/popup-blocked": "The popup is blocked."
+  },
+  "Appbar": {
+    "thesis_manager": "Thesis Manager",
+    "logout": "Logout"
+  },
+  "Locales": {
+    "es-ES": "Spanish (Spain)",
+    "en-US": "English (United States)"
+  },
+  "Pagination": {
+    "rows_per_page": "Rows per page:",
+    "of": "of",
+    "more_than": "more than",
+    "go_to_previous_page": "Go to previous page",
+    "go_to_next_page": "Go to next page",
+    "all": "All"
+  },
+  "ThesisPage": {
+    "DirectLinks": {
+      "established_regulations": "Established Regulations",
+      "enter_the_virtual_room": "Enter the Virtual Room"
+    },
+    "Responsible": {
+      "assigned_responsible": "Assigned Responsible",
+      "no_responsibles_assigned": "No responsibles assigned yet.",
+      "send_message": "Send message",
+      "director": "Director",
+      "reviewer": "Reviewer"
+    },
+    "Documents": {
+      "uploaded_documents": "Uploaded Documents",
+      "no_documents_uploaded_yet": "No documents uploaded yet.",
+      "TableHeader": {
+        "title": "Title",
+        "size": "Size",
+        "date": "Date",
+        "actions": ""
+      }
+    },
+    "Timeline": {
+      "steps_of_your_thesis": "Steps of your thesis",
+      "task_0_doctoral_file": "Task 0 - Doctoral File",
+      "uploading_of_doctoral_file_has_been_enabled": "Uploading of doctoral file has been enabled.",
+      "task_1_thesis_proposal": "Task 1 - Thesis Proposal",
+      "uploading_of_doctoral_thesis_proposal_has_been_enabled": "Uploading of doctoral thesis proposal has been enabled.",
+      "task_2_progress": "Task 2 - Progress",
+      "uploading_of_doctoral_thesis_progress_reports_has_been_enabled": "Uploading of doctoral thesis progress reports has been enabled.",
+      "task_3_thesis_preparation": "Task 3 - Thesis Preparation",
+      "uploading_of_doctoral_thesis_preparation_has_been_enabled": "Uploading of doctoral thesis preparation has been enabled.",
+      "task_4_dissertation": "Task 4 - Dissertation",
+      "uploading_of_doctoral_thesis_dissertation_has_been_enabled": "Uploading of doctoral thesis dissertation has been enabled.",
+      "final_task": "Final Task",
+      "congratulations_you_have_completed_the_process": "Congratulations! You have completed the process.",
+      "task_0": "Task 0",
+      "task_1": "Task 1",
+      "task_2": "Task 2",
+      "task_3": "Task 3",
+      "task_4": "Task 4",
+      "make_the_delivery_of_your": "Make the delivery of your",
+      "submit_document": "Submit document",
+      "you_can_continue_with_the_upload_process_immediately": "You can continue with the upload process immediately."
+    }
+  },
+  "ProgramPage": {
+    "Card": {
+      "doctorate": "Doctorate",
+      "moodle": "Moodle",
+      "oops_something_went_wrong": "Oops! Something went wrong",
+      "we_couldnt_find_the_programs_you_were_looking_for": "We couldn't find the programs you were looking for",
+      "programs_not_found": "Programs not found"
+    },
+    "Tabs": {
+      "directors": "directors",
+      "students": "students"
+    },
+    "Directors": {
+      "TableHeader": {
+        "responsible": "Responsible",
+        "type": "Type",
+        "new_assigments": "New Assigments",
+        "active_students": "Active Students",
+        "total_asignments": "Total Asignments"
+      }
+    }
+  }
+}

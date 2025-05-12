@@ -1,0 +1,112 @@
+{
+  "Dashboard": {
+    "good_morning": "Buenos días",
+    "good_afternoon": "Buenas tardes",
+    "good_evening": "Buenas noches"
+  },
+  "AuthPage": {
+    "thesis_manager": "Gestor de Tesis",
+    "manage_supervise_thesis_processes_easily": "Administra y supervisa procesos de tesis de forma sencilla",
+    "login": "Iniciar sesión",
+    "continue_with_google": "Continuar con Google",
+    "logging_in": "Iniciando sesión",
+    "retry": "Reintentar",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "mail": "Correo",
+    "go_back": "Regresar",
+    "auth/popup-closed-by-user": "Se cerró la ventana emergente antes de completar el inicio de sesión.",
+    "auth/cancelled-popup-request": "Se canceló la solicitud de inicio de sesión.",
+    "auth/network-request-failed": "Ocurrió un error de red. Por favor, inténtalo de nuevo.",
+    "auth/invalid-api-key": "La clave de API es inválida. Verifica la configuración.",
+    "auth/invalid-email": "El correo electrónico es inválido.",
+    "auth/invalid-credential": "Credenciales inválidas. Revisa tu email o contraseña.",
+    "auth/too-many-requests": "Demasiadas solicitudes. Por favor, inténtalo de nuevo más tarde.",
+    "auth/configuration-not-found": "configuration-not-found",
+    "auth/popup-blocked": "La ventana emergente está bloqueada."
+  },
+  "Appbar": {
+    "thesis_manager": "Gestor de Tesis",
+    "logout": "Cerrar sesión"
+  },
+  "Locales": {
+    "es-ES": "Español (España)",
+    "en-US": "Inglés (Estados Unidos)"
+  },
+  "Pagination": {
+    "rows_per_page": "Filas por página:",
+    "of": "de",
+    "more_than": "más de",
+    "go_to_previous_page": "Ir a la página anterior",
+    "go_to_next_page": "Ir a la siguiente página",
+    "all": "Todos"
+  },
+  "ThesisPage": {
+    "DirectLinks": {
+      "established_regulations": "Normativas Establecidas",
+      "enter_the_virtual_room": "Entra a la Sala virtual"
+    },
+    "Responsible": {
+      "assigned_responsible": "Responsable Asignado",
+      "no_responsibles_assigned": "No hay responsables asignados todavía.",
+      "send_message": "Enviar mensaje",
+      "director": "Director",
+      "reviewer": "Revisor"
+    },
+    "Documents": {
+      "uploaded_documents": "Documentos Subidos",
+      "no_documents_uploaded_yet": "No hay documentos subidos aún.",
+      "TableHeader": {
+        "title": "Título",
+        "size": "Tamaño",
+        "date": "Fecha",
+        "actions": ""
+      }
+    },
+    "Timeline": {
+      "steps_of_your_thesis": "Pasos de tu tesis",
+      "task_0_doctoral_file": "Tarea 0 - Ficha Doctoral",
+      "uploading_of_doctoral_file_has_been_enabled": "Se ha habilitado la subida de la ficha doctoral.",
+      "task_1_thesis_proposal": "Tarea 1 - Propuesta de Tesis",
+      "uploading_of_doctoral_thesis_proposal_has_been_enabled": "Se ha habilitado la subida de la propuesta de tesis doctoral.",
+      "task_2_progress": "Tarea 2 - Avance",
+      "uploading_of_doctoral_thesis_progress_reports_has_been_enabled": "Se ha habilitado la subida del avance de tesis doctoral.",
+      "task_3_thesis_preparation": "Tarea 3 - Elaboración de Tesis",
+      "uploading_of_doctoral_thesis_preparation_has_been_enabled": "Se ha habilitado la subida de la elaboración de tesis doctoral.",
+      "task_4_dissertation": "Tarea 4 - Disertación",
+      "uploading_of_doctoral_thesis_dissertation_has_been_enabled": "Se ha habilitado la subida de la disertación de tesis doctoral.",
+      "final_task": "Tarea Final",
+      "congratulations_you_have_completed_the_process": "¡Felicidades! Has completado el proceso.",
+      "task_0": "Tarea 0",
+      "task_1": "Tarea 1",
+      "task_2": "Tarea 2",
+      "task_3": "Tarea 3",
+      "task_4": "Tarea 4",
+      "make_the_delivery_of_your": "Realiza la entrega de tu",
+      "submit_document": "Subir documento",
+      "you_can_continue_with_the_upload_process_immediately": "Puedes continuar con el proceso de subida de inmediato."
+    }
+  },
+  "ProgramPage": {
+    "Card": {
+      "doctorate": "Doctorado",
+      "moodle": "Moodle",
+      "oops_something_went_wrong": "¡Ups! Algo salió mal",
+      "we_couldnt_find_the_programs_you_were_looking_for": "No pudimos encontrar los programas que estabas buscando",
+      "programs_not_found": "Programas no encontrados"
+    },
+    "Tabs": {
+      "directors": "directors",
+      "students": "students"
+    },
+    "Documents": {
+      "TableHeader": {
+        "responsible": "Responsable",
+        "type": "Tipo",
+        "new_assigments": "Nuevas Asignaciones",
+        "active_students": "Alumnos activos",
+        "total_asignments": "Total de Asignaciones"
+      }
+    }
+  }
+}
