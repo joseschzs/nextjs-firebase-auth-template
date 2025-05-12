@@ -20,15 +20,13 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { signOut } from "firebase/auth";
-/*import { useLocale, useTranslations } from "next-intl";*/
+import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useLoadingCallback } from "react-loading-hook";
 
 export function Navigation() {
-  /*const locale = useLocale();*/
-
-  return <AppBarComponent locale={"locale"} />;
+  return <AppBarComponent />;
 }
 
 interface AppBarProps {
@@ -45,7 +43,7 @@ const AppBar = styled(MuiAppBar, {
   }),
 }));
 
-export function AppBarComponent({ locale }: Readonly<AppBarProps>) {
+export function AppBarComponent() {
   const { user } = useAuth();
   const [hasLoggedOut, setHasLoggedOut] = React.useState(false);
   const [handleLogout, isLogoutLoading] = useLoadingCallback(async () => {
@@ -58,7 +56,7 @@ export function AppBarComponent({ locale }: Readonly<AppBarProps>) {
     setHasLoggedOut(true);
   });
 
-  /*const t = useTranslations("Appbar");*/
+  const t = useTranslations("Appbar");
   const router = useRouter();
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -150,7 +148,7 @@ export function AppBarComponent({ locale }: Readonly<AppBarProps>) {
             >
               {isLogoutLoading ? <CircularProgress size={18} /> : <ExitToApp />}
             </ListItemIcon>
-            <ListItemText primary={"t(logout)"} />
+            <ListItemText primary={t("logout")} />
           </ListItemButton>
         </ListItem>
       </Menu>

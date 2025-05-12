@@ -25,6 +25,12 @@
     "auth/configuration-not-found": "configuration-not-found",
     "auth/popup-blocked": "La ventana emergente está bloqueada."
   },
+  "NotFoundPage": {
+    "page_not_found": "Página no encontrada",
+    "go_back_home": "Regresar a la página de inicio",
+    "error_404": "Error 404",
+    "error_500": "Error 500"
+  },
   "Appbar": {
     "thesis_manager": "Gestor de Tesis",
     "logout": "Cerrar sesión"
@@ -40,73 +46,5 @@
     "go_to_previous_page": "Ir a la página anterior",
     "go_to_next_page": "Ir a la siguiente página",
     "all": "Todos"
-  },
-  "ThesisPage": {
-    "DirectLinks": {
-      "established_regulations": "Normativas Establecidas",
-      "enter_the_virtual_room": "Entra a la Sala virtual"
-    },
-    "Responsible": {
-      "assigned_responsible": "Responsable Asignado",
-      "no_responsibles_assigned": "No hay responsables asignados todavía.",
-      "send_message": "Enviar mensaje",
-      "director": "Director",
-      "reviewer": "Revisor"
-    },
-    "Documents": {
-      "uploaded_documents": "Documentos Subidos",
-      "no_documents_uploaded_yet": "No hay documentos subidos aún.",
-      "TableHeader": {
-        "title": "Título",
-        "size": "Tamaño",
-        "date": "Fecha",
-        "actions": ""
-      }
-    },
-    "Timeline": {
-      "steps_of_your_thesis": "Pasos de tu tesis",
-      "task_0_doctoral_file": "Tarea 0 - Ficha Doctoral",
-      "uploading_of_doctoral_file_has_been_enabled": "Se ha habilitado la subida de la ficha doctoral.",
-      "task_1_thesis_proposal": "Tarea 1 - Propuesta de Tesis",
-      "uploading_of_doctoral_thesis_proposal_has_been_enabled": "Se ha habilitado la subida de la propuesta de tesis doctoral.",
-      "task_2_progress": "Tarea 2 - Avance",
-      "uploading_of_doctoral_thesis_progress_reports_has_been_enabled": "Se ha habilitado la subida del avance de tesis doctoral.",
-      "task_3_thesis_preparation": "Tarea 3 - Elaboración de Tesis",
-      "uploading_of_doctoral_thesis_preparation_has_been_enabled": "Se ha habilitado la subida de la elaboración de tesis doctoral.",
-      "task_4_dissertation": "Tarea 4 - Disertación",
-      "uploading_of_doctoral_thesis_dissertation_has_been_enabled": "Se ha habilitado la subida de la disertación de tesis doctoral.",
-      "final_task": "Tarea Final",
-      "congratulations_you_have_completed_the_process": "¡Felicidades! Has completado el proceso.",
-      "task_0": "Tarea 0",
-      "task_1": "Tarea 1",
-      "task_2": "Tarea 2",
-      "task_3": "Tarea 3",
-      "task_4": "Tarea 4",
-      "make_the_delivery_of_your": "Realiza la entrega de tu",
-      "submit_document": "Subir documento",
-      "you_can_continue_with_the_upload_process_immediately": "Puedes continuar con el proceso de subida de inmediato."
-    }
-  },
-  "ProgramPage": {
-    "Card": {
-      "doctorate": "Doctorado",
-      "moodle": "Moodle",
-      "oops_something_went_wrong": "¡Ups! Algo salió mal",
-      "we_couldnt_find_the_programs_you_were_looking_for": "No pudimos encontrar los programas que estabas buscando",
-      "programs_not_found": "Programas no encontrados"
-    },
-    "Tabs": {
-      "directors": "directors",
-      "students": "students"
-    },
-    "Documents": {
-      "TableHeader": {
-        "responsible": "Responsable",
-        "type": "Tipo",
-        "new_assigments": "Nuevas Asignaciones",
-        "active_students": "Alumnos activos",
-        "total_asignments": "Total de Asignaciones"
-      }
-    }
   }
 }

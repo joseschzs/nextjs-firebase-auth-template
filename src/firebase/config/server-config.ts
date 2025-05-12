@@ -1,7 +1,5 @@
-import {clientConfig} from './client-config';
-
 export const serverConfig = {
-  useSecureCookies: process.env.USE_SECURE_COOKIES === 'true',
+  useSecureCookies: process.env.USE_SECURE_COOKIES === "true",
   firebaseApiKey: process.env.FIREBASE_API_KEY!,
   serviceAccount: process.env.FIREBASE_ADMIN_PRIVATE_KEY
     ? {
@@ -9,25 +7,25 @@ export const serverConfig = {
         clientEmail: process.env.FIREBASE_ADMIN_CLIENT_EMAIL!,
         privateKey: process.env.FIREBASE_ADMIN_PRIVATE_KEY.replace(
           /\\n/g,
-          '\n'
-        )!
+          "\n",
+        )!,
       }
-    : undefined
+    : undefined,
 };
 
 export const authConfig = {
   apiKey: serverConfig.firebaseApiKey,
-  cookieName: 'AuthToken',
+  cookieName: "AuthToken",
   cookieSignatureKeys: [
     process.env.COOKIE_SECRET_CURRENT!,
-    process.env.COOKIE_SECRET_PREVIOUS!
+    process.env.COOKIE_SECRET_PREVIOUS!,
   ],
   cookieSerializeOptions: {
-    path: '/',
+    path: "/",
     httpOnly: true,
     secure: serverConfig.useSecureCookies, // Set this to true on HTTPS environments
-    sameSite: 'lax' as const,
-    maxAge: 12 * 60 * 60 * 24 // twelve days
+    sameSite: "lax" as const,
+    maxAge: 12 * 60 * 60 * 24, // twelve days
   },
   serviceAccount: serverConfig.serviceAccount,
   // Set to false in Firebase Hosting environment due to https://stackoverflow.com/questions/44929653/firebase-cloud-function-wont-store-cookie-named-other-than-session
@@ -36,5 +34,4 @@ export const authConfig = {
   enableCustomToken: true,
   experimental_enableTokenRefreshOnExpiredKidHeader: true,
   debug: true,
-  tenantId: clientConfig.tenantId
 };

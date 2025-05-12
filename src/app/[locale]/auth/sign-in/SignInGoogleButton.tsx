@@ -9,33 +9,43 @@ import { loginWithCredential } from "@/firebase/api";
 import { getFirebaseAuth } from "@/firebase/auth/firebase";
 import { useRedirectAfterLogin } from "@/firebase/shared/useRedirectAfterLogin";
 import { useRedirectParam } from "@/firebase/shared/useRedirectParam";
-import { Button, CircularProgress, Typography } from "@mui/material";
-import { UserCredential } from "firebase/auth";
+import { Box, Button, CircularProgress, Typography } from "@mui/material";
+import { AuthError, UserCredential } from "firebase/auth";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
-import { useLoadingCallback } from "react-loading-hook";
 
 export default function SignInGoogleButton() {
   const t = useTranslations("AuthPage");
-
-  const [hasLogged, setHasLogged] = useState(false);
   const redirect = useRedirectParam();
   const redirectAfterLogin = useRedirectAfterLogin();
+
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
+  const [googleError, setGoogleError] = useState<AuthError | null>(null);
+  const [hasLogged, setHasLogged] = useState(false);
 
   async function handleLogin(credential: UserCredential) {
     await loginWithCredential(credential);
     redirectAfterLogin();
   }
 
-  const [handleLoginWithGoogle, isGoogleLoading, googleError] =
-    useLoadingCallback(async () => {
-      setHasLogged(false);
+  async function handleLoginWithGoogle() {
+    setGoogleError(null);
+    setIsGoogleLoading(true);
+    setHasLogged(false);
 
+    try {
       const auth = getFirebaseAuth();
-      await handleLogin(await loginWithProvider(auth, getGoogleProvider(auth)));
+
+      const credential = await loginWithProvider(auth, getGoogleProvider(auth));
+      await handleLogin(credential);
 
       setHasLogged(true);
-    });
+    } catch (error) {
+      setGoogleError(error as AuthError);
+    } finally {
+      setIsGoogleLoading(false);
+    }
+  }
 
   return (
     <>
@@ -43,9 +53,9 @@ export default function SignInGoogleButton() {
         variant="outlined"
         color="neutral"
         size="large"
-        startIcon={<GoogleIcon />}
+        startIcon={<GoogleIcon sx={{ opacity: isGoogleLoading ? 0.4 : 1 }} />}
         endIcon={isGoogleLoading && <CircularProgress size={18} />}
-        sx={{ width: "100%", maxWidth: 320 }}
+        sx={{ width: "100%" }}
         disabled={isGoogleLoading}
         onClick={handleLoginWithGoogle}
       >
@@ -59,9 +69,11 @@ export default function SignInGoogleButton() {
       </Button>
 
       {googleError && (
-        <Typography color="critical.700" variant="p_small_regular">
-          {t(googleError.code)}
-        </Typography>
+        <Box width="100%">
+          <Typography color="critical.700" variant="p_small_regular">
+            {t(googleError.code)}
+          </Typography>
+        </Box>
       )}
 
       {hasLogged && (

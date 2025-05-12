@@ -5,5 +5,5 @@ export const clientConfig = {
   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID!,
   messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID!,
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID!,
-  tenantId: process.env.NEXT_PUBLIC_FIREBASE_AUTH_TENANT_ID
+  /*tenantId: process.env.NEXT_PUBLIC_FIREBASE_AUTH_TENANT_ID*/
 };
