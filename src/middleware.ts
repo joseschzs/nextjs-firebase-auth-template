@@ -27,7 +27,7 @@ export async function middleware(request: NextRequest) {
     const tokens = await getTokens(await cookies(), authConfig);
 
     if (tokens) {
-      return NextResponse.redirect(new URL(`/`, request.url));
+      return NextResponse.redirect(new URL(`/${locale}`, request.url));
     } else {
       return intlMiddleware(request);
     }
@@ -50,7 +50,7 @@ export async function middleware(request: NextRequest) {
     handleInvalidToken: async () => {
       const loginUrl = nextUrl.clone();
       loginUrl.pathname = `/${locale || routing.defaultLocale}/auth/sign-in`;
-      loginUrl.searchParams.set("redirect", pathname);
+      loginUrl.searchParams.set("redirect", pathAfterLocale);
       return NextResponse.redirect(loginUrl);
     },
 
