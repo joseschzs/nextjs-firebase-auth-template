@@ -1,7 +1,8 @@
 import * as React from "react";
-import styles from "./Button.module.css";
-import { LoadingIcon } from "../icons";
+import { JSX } from "react";
 import { cx } from "../classNames";
+import { LoadingIcon } from "../icons";
+import styles from "./Button.module.css";
 
 const variantClassNames = {
   contained: styles.contained,

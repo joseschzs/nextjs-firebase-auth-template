@@ -5,7 +5,6 @@ import { getFirestore } from "firebase-admin/firestore";
 import { Metadata } from "next";
 import { getTokens } from "next-firebase-auth-edge/lib/next/tokens";
 import { cookies } from "next/headers";
-import { Badge } from "../../../ui/Badge";
 import { HomeLink } from "../../../ui/HomeLink";
 import { MainTitle } from "../../../ui/MainTitle";
 import styles from "./page.module.css";
@@ -42,7 +41,6 @@ export default async function Profile() {
       <MainTitle>
         <HomeLink />
         <span>Profile</span>
-        <Badge>Rendered on server</Badge>
       </MainTitle>
       <UserProfile count={count} incrementCounter={incrementCounter} />
     </div>

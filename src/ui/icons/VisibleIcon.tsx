@@ -1,4 +1,5 @@
 import * as React from "react";
+import { JSX } from "react";
 import styles from "./icons.module.css";
 
 export function VisibleIcon(props: JSX.IntrinsicElements["span"]) {

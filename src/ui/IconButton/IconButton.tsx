@@ -1,5 +1,6 @@
-import styles from "./IconButton.module.css";
+import { JSX } from "react";
 import { cx } from "../classNames";
+import styles from "./IconButton.module.css";
 
 export function IconButton(props: JSX.IntrinsicElements["button"]) {
   return (
